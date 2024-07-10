@@ -1,3 +1,4 @@
+@dd($trains)
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +13,13 @@
 <body>
     <!-- TAG PER IMMAGINI -->
     <!-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> -->
-    @include ('shared.header');
-
+    @include ('shared.header')
+    <hr>
     <h1>home app</h1>
-    @include ('shared.footer');
+
+    
+    <hr>
+    @include ('shared.footer')
 
 
 
