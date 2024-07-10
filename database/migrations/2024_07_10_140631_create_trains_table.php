@@ -14,6 +14,15 @@ return new class extends Migration
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('agency');
+            $table->string('city_start');
+            $table->string('city_end');
+            $table->dateTime('time_start' );
+            $table->dateTime('time_end' );
+            $table->tinyInteger('wagons');
+            $table->boolean('on_time');
+            $table->boolean('delted');
+            
         });
     }
 
